@@ -15,9 +15,19 @@
     <!-- DaisyUI + Tailwind css cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-Sora {
+            font-family: "Sora", serif;
+        }
+
+        .font-ADLaM {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-Sora">
     <!-- navbar -->
     <div class=" bg-[#FFF9F4]">
         <div class="lg:w-5/6 mx-4 lg:mx-auto py-7 flex justify-between items-center">
@@ -57,12 +67,14 @@
     <header class="static mb-14 md:mb-20 lg:mb-32 lg:w-5/6 mx-4 lg:mx-auto mt-8 md:mt-20 ">
         <div class="relative w-full">
             <div class="relative md:absolute z-10">
-                <h1 class="text-[30px] md:text-[56px] text-[#111111] font-normal">Pamper Your Pet,<br>
+                <h1 class="text-[30px] md:text-[56px] text-[#111111] font-ADLaM font-normal">Pamper Your Pet,<br>
                     Because They Deserve <br>
-                    the Bes</h1>
+                    the Best</h1>
                 <p class="md:w-1/2 md:text-xl font-normal text-gray-600">Discover a world of treats, toys, and
                     essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-[#FFDC26] py-2 md:py-[10px] px-6 md:px-[30px] mt-6 md:text-xl font-normal rounded-lg">Find a
+                <button
+                    class="bg-[#FFDC26] py-2 md:py-[10px] px-6 md:px-[30px] mt-6 md:text-xl font-normal rounded-lg">Find
+                    a
                     pet</button>
             </div>
             <div class="md:static z-0 ">
@@ -74,7 +86,49 @@
     </header>
     <!-- Main -->
     <main>
-        
+        <!-- Categories section -->
+        <section class="lg:w-5/6 mx-4 lg:mx-auto mb-14 md:mb-32">
+            <h2 class="text-2xl md:text-4xl text-[#111111] font-normal font-ADLaM mb-8 md:mb-12">Browse By Categories</h2>
+            <!-- pet csrd container -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 flex-wrap">
+                <!-- card-1 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+                <!-- card-3 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+                <!-- card-4 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+                <!-- card-5 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+                <!-- card-6 -->
+                <div class="bg-[#F9DF8A] rounded-xl py-7 lg:py-[34px] flex flex-col items-center">
+                    <img class="bg-white p-7 rounded-full mb-6" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h4 class="text-xl font-ADLaM mb-3 font-normal">Dog</h4>
+                    <p>3 items</p>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer>
